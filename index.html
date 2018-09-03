@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>MINYOUNG KIM</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="artportfolio">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900%7COpen+Sans:300,400,600" rel="stylesheet">
+    </head>
+<body> 
+<!--_____________________________________________________________________________________________________________________________-->    
+<div id="content">  <!--wrapping for the entire grid-->    
+<!--each div is a section of the grid-->
+<!--__________________________________________________________LOGO___________________________________________________________________-->
+<div class=logo>
+    <a href="index.html"> <img src="img/logo.png" id="logostyle" alt="KIM MIN YOUNG"></a>
+</div> 
+<!--__________________________________________________________LOGO_END__________________________________________________________________--> 
+    
+    
+<!--_______________________________________________________NAVBAR______________________________________________________________________-->  
+<nav id="mySidenav"> 
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!--____ code from W3SCHOOLS (https://www.w3schools.com/howto/howto_js_sidenav.asp)-->
+    <a href="gallery.html">GALLERY</a>
+<!--_____code adapted from W3SCHOOLS______(https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp)_____-->    
+            <div class=dropdown>
+                 <a href="#" class="dropbtn">PROJECTS &#9660;</a> 
+                     <div class="dropdown-content">
+                         <a href="wish.html">WISH</a>
+                         <a href="moonsoban.html">MOON SO BAN</a>
+                         <a href="balloon.html">BALLOON PROJECT</a>
+                     </div>       
+            </div>
+<!--code adapted from W3SCHOOLS_END______________-->     
+     <a href="aboutme.html">ABOUT ME</a>
+     <a href="resume.html">RESUME</a>
+     <span class="openbtn" onclick="openNav()">&#9776; </span>    
+    
+</nav>
+
+<!--____ code from W3SCHOOLS (https://www.w3schools.com/howto/howto_js_sidenav.asp)-->    
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";}
+</script>    
+<!--____ code from W3SCHOOLS (https://www.w3schools.com/howto/howto_js_sidenav.asp)_END__-->    
+<!--_______________________________________________________NAVBAR_END_____________________________________________________________________-->    
+
+    
+
+<div class="homepageimg"> 
+<img src="img/home1.jpg" class="circleimg" alt="paper cranes">
+    <img src="img/home2.jpg" class="circleimg" alt="marble coasters">
+    <img src="img/home6.jpg" class="circleimg" alt="balloons">
+    <img src="img/home4.jpg" class="circleimg" alt="sculpture">
+  
+    </div>
+    
+    
+<div class="homepage">    
+    
+   <strong> KIM MIN YOUNG</strong>
+    <br>is an  <strong>ARTIST</strong> and  <strong>DESIGNER</strong> 
+    <br>based in <strong> SEOUL, SOUTH KOREA</strong>
+
+    </div>
+    
+    
+
+
+   
+</div>    
+    
+
+</body>
+</html>

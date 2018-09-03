@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>ABOUT ME</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="artportfolio">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900%7COpen+Sans:300,400,600" rel="stylesheet">
+    </head>
+<body> 
+<!--_____________________________________________________________________________________________________________________________-->    
+<div id="content">  <!--wrapping for the entire grid-->    
+<!--each div is a section of the grid-->
+<!--__________________________________________________________LOGO___________________________________________________________________-->
+<div class=logo>
+    <a href="index.html"> <img src="img/logo.png" id="logostyle" alt="KIM MIN YOUNG"></a>
+</div> 
+<!--__________________________________________________________LOGO_END__________________________________________________________________--> 
+    
+    
+<!--_______________________________________________________NAVBAR______________________________________________________________________-->  
+<nav id="mySidenav"> 
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!--____ code from W3SCHOOLS (https://www.w3schools.com/howto/howto_js_sidenav.asp)-->
+    <a href="gallery.html">GALLERY</a>
+<!--_____code adapted from W3SCHOOLS______(https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp)_____-->    
+            <div class=dropdown>
+                 <a href="#" class="dropbtn">PROJECTS &#9660;</a> 
+                     <div class="dropdown-content">
+                         <a href="wish.html">WISH</a>
+                         <a href="moonsoban.html">MOON SO BAN</a>
+                         <a href="balloon.html">BALLOON PROJECT</a>
+                     </div>       
+            </div>
+<!--code adapted from W3SCHOOLS_END______________-->     
+     <a href="aboutme.html"><span class="navbarcolour">ABOUT ME</span></a>
+     <a href="resume.html">RESUME</a>
+     <span class="openbtn" onclick="openNav()">&#9776; </span>    
+    
+</nav>
+
+<!--____ code from W3SCHOOLS (https://www.w3schools.com/howto/howto_js_sidenav.asp)-->    
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";}
+</script>    
+<!--____ code from W3SCHOOLS (https://www.w3schools.com/howto/howto_js_sidenav.asp)_END__-->    
+<!--_______________________________________________________NAVBAR_END_____________________________________________________________________--> 
+
+    
+    
+    
+<div class=introduction>
+    Hi,  I’m Min young kim, a 4th  year at Ewha womans university, studying Sculpture and Industrial Design.
+    <br>
+    I am both an artist and a designer. As the diversity of art grows, many people differentiate the artist and the design, others say the artist and their design are one. I am between those two opinions Majoring in sculpture and industrial design, I both and combine and separate these two. I have the advantage of using the best of both worlds.
+    I also have a large interest in colour theory
+</div>
+
+
+<div class="contacts">
+    <button class="button button1">alsdudioy<br>@gmail.com</button>
+    <button class="button button2">@miyoo<br>_art_design</button>
+    <button class="button button3">010-<br>5124-5328</button>
+</div>
+
+    
+<div class=profile>
+    <img src="img/profile.jpg" class="profilephoto" alt="profile photo">
+</div>    
+    
+</div> 
+</body>
+</html>

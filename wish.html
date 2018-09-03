@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <title>WISH</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="artportfolio">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900%7COpen+Sans:300,400,600" rel="stylesheet">
+    </head>
+<body> 
+<!--_____________________________________________________________________________________________________________________________-->    
+<div id="content">  <!--wrapping for the entire grid-->    
+<!--each div is a section of the grid-->
+<!--__________________________________________________________LOGO___________________________________________________________________-->
+<div class=logo>
+    <a href="index.html"> <img src="img/logo.png" id="logostyle" alt="KIM MIN YOUNG"></a>
+</div> 
+<!--__________________________________________________________LOGO_END__________________________________________________________________--> 
+    
+    
+<!--_______________________________________________________NAVBAR______________________________________________________________________-->  
+<nav id="mySidenav"> 
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> <!--____ code from W3SCHOOLS (https://www.w3schools.com/howto/howto_js_sidenav.asp)-->
+    <a href="gallery.html">GALLERY</a>
+<!--_____code adapted from W3SCHOOLS______(https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp)_____-->    
+            <div class=dropdown>
+                 <a href="#" class="dropbtn"><span class="navbarcolour">PROJECTS &#9660;</span></a> 
+                     <div class="dropdown-content">
+                         <a href="wish.html"><span class="navbarcolour">WISH</span></a>
+                         <a href="moonsoban.html">MOON SO BAN</a>
+                         <a href="balloon.html">BALLOON PROJECT</a>
+                     </div>       
+            </div>
+<!--code adapted from W3SCHOOLS_END______________-->     
+     <a href="aboutme.html">ABOUT ME</a>
+     <a href="resume.html">RESUME</a>
+     <span class="openbtn" onclick="openNav()">&#9776; </span>    
+    
+</nav>
+
+<!--____ code from W3SCHOOLS (https://www.w3schools.com/howto/howto_js_sidenav.asp)-->    
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";}
+</script>    
+<!--____ code from W3SCHOOLS (https://www.w3schools.com/howto/howto_js_sidenav.asp)_END__-->    
+<!--_______________________________________________________NAVBAR_END_____________________________________________________________________-->    
+    
+    
+<div class="project">
+   
+     <p> 
+        <span class="projectstyle">WISH</span>
+        <br>Personal Work, 2017
+     </p>        
+        
+    <img src="img/wishpage1.jpg" class="projectimg" alt="claycrane">
+    
+     <p>
+        <span class="projectstyle2">WHY DID I MAKE "WISH"?</span>
+        <br>I am interested in clay work and photography. I have a sentimental story with my mom and her folding paper cranes. When I was going through a difficult time, my mom told me that it was difficult because I am 20. She too had faced hardship at my age and paper cranes had consoled her. My mom gifted 1000 individually folded paper cranes. For me, this was an example of mother's love.
+        <br>In Korean, paper cranes means 'dreams come true' and my mom's gift got me through hard times that allowed me to achieve my dreams.
+     </p>
+        
+    <img src="img/wishpage2.jpg" class="projectimg" alt="claycrane">
+    <img src="img/wishpage3.jpg" class="projectimg" alt="claycrane">
+    <img src="img/wishpage4.jpg" class="projectimg" alt="claycrane">
+    
+    <img src="img/wishpage5.jpg" class="projectimg2" alt="claycrane"> 
+        <p class="projectstyle2">COLOURING</p>
+    <img src="img/wishpage6.jpg" class="projectimg2" alt="claycrane"> 
+        <p class="projectstyle2">MOCK UP</p>
+    <img src="img/wishpage7.jpg" class="projectimg2" alt="claycrane">  
+        <p class="projectstyle2">CLAY WORKING</p>
+
+    
+        <br>
+        <br>
+        <br>
+        
+        
+</div>
+</div> 
+</body>
+</html>

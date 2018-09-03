@@ -1,0 +1,430 @@
+html{
+    width:auto;
+    background-color: white;}
+
+body{text-align: center;
+    font-family: 'open sans', sans-serif;
+    font-size: 16px;
+    text-align:center;
+    color: black;
+    font-weight: 300;}
+
+#content > *{
+     background-color: white;}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+ /*default layout*/
+#content{  
+     display:grid;
+     /*grid template columns is determining the width of each column. The number of 'numbers' indicates the number of columns there are.*/
+     grid-template-columns: repeat(12, 1fr);   
+     grid-template-rows: repeat(4, minmax(0px, auto)); /*meaning that the height of the rows is 0px by default, but if the content in the element surpasses this, the grid eight is determined by the height of the content of element*/  
+     grid-gap: 0px; /*gap between columns and rows is 0px*/
+     margin-left: auto; /*to centre content*/
+     margin-right: auto;
+     grid-template-areas: /*string to determine how many columns an element takes up on the grid*/
+        ". . . . logo logo logo logo . . . ."
+        "nav nav nav nav nav nav nav nav nav nav nav nav"
+        ". . . resume resume resume resume resume resume . . . "
+        ". . . profile profile introduction introduction introduction introduction . . ."
+        ". . . profile profile introduction introduction introduction introduction . . ."
+        "contacts contacts contacts contacts contacts contacts contacts contacts contacts contacts contacts contacts"
+        ". . . column1 column1 column2 column2 column3 column3 . . ."
+        ". . homepageimg homepageimg homepageimg homepageimg homepageimg homepageimg homepageimg homepageimg . ."
+        ". . . homepage homepage homepage homepage homepage homepage . . ."
+        ". . . project project project project project project . . .";}
+/*------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* ------------------------------------------------nav bar start*/
+
+nav a{
+    padding: 40px ;
+    top: 100px;
+    width: 100%;
+    display: inline;
+    color: darkgrey;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;}
+
+nav a:hover{
+    text-decoration: underline}
+
+nav a:active{
+    color:#f99898;}
+
+nav{
+    grid-area: nav;
+    padding-top:30px;
+    padding-bottom: 30px;
+    grid-column-gap: 10px;
+    font-family: 'roboto', sans-serif;
+    font-size: 21px;
+    font-weight: 400;}
+
+
+
+.navbarcolour{
+       color: #f99898;
+}
+
+
+.openbtn{
+    display: none;} 
+
+.closebtn{
+    display:none;}
+
+/* DROP DOWN*/
+.dropbtn {
+    background-color: transparent;
+    color: darkgrey;
+    color: dakgrey;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    z-index: 1;
+    padding: 10px 20px 10px 0px;}
+
+.dropdown-content a {
+    color: darkgrey;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+
+.dropdown-content a:hover {text-decoration: underline;}
+
+.dropdown:hover .dropdown-content {
+    display: block;}
+
+/*DROPDOWN END*/
+
+/* --------------------------------------------------nav bar end*/
+
+
+
+/* ------------------------------------------------ HOME PAGE  */
+
+/*circle images on home page*/
+.circleimg {
+    width:20%;
+    border-radius: 50%;
+    padding: 10px;}
+
+.homepageimg{
+    grid-area: homepageimg;
+    display:table;
+    margin:auto;
+    padding-top: 20px;
+    padding-bottom: 20px;}
+
+/*circle images on home page end*/
+
+
+/*homepage introduction*/
+.homepage {
+    grid-area: homepage;
+    font-family:'Roboto', sans-serif;
+    font-size: 40px;
+    color: #c7c7c7;
+    text-align: right;}
+
+/* HOME PAGE END */
+
+
+/* ------------------------------------------------------LOGO */
+
+.logo{
+    grid-area: logo;
+    padding: 0;}
+
+#logostyle{
+    width:60%;
+}
+
+/* LOGO END*/
+
+
+/* ----------------------------------------------------RESUME*/
+.resume{
+    grid-area: resume;}
+
+.resume1{
+    color: #fd6464;
+    font-weight: 700;
+    font-size: 30px;}
+
+.resume2{   
+    text-align:center;
+    color: #f99898;
+    font-size: 20px;
+    font-weight: 400;}
+
+.resume3{          /*for subtexts*/
+    font-size: 14px;
+    color: #2c2c2c;}
+
+.resume4{
+    color: #ff658d;}
+
+/* RESUME END*/
+
+/* ---------------------------------------------------GALLERY*/
+.gallery{
+    grid-area: gallery;
+}
+
+
+
+.column1 img{
+    width:100%;
+    padding: 5px;
+}
+
+.column2 img{
+    width:100%;
+    padding: 5px;
+}
+
+.column3 img{
+    width:100%;
+    padding: 5px;
+}
+
+.column1{
+    grid-area: column1;
+    max-width: 100%;
+padding:5px;}
+
+.column2{  
+    grid-area: column2;
+    max-width: 100%
+        ;padding:5px;}
+
+.column3{
+    grid-area: column3;
+    max-width: 100%;padding:5px;}
+
+
+.hover {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    font-weight: 600;
+}
+
+.hover:hover .text{
+    display: inline;
+}
+
+.hover:hover img{
+    opacity:0.2;
+}
+
+
+/* GALLERY END*/
+
+/* ---------------------------------------------------ABOUT ME*/ 
+.profile{
+    grid-area: profile;}
+
+
+.introduction{
+    grid-area: introduction;
+    line-height: 140%;
+    text-align:center;
+    color: black;
+    font-weight: 300;
+    padding: 5%;}
+
+.contacts{
+    grid-area: contacts;}
+
+
+.profilephoto {
+    width:100%;
+    border-radius: 50%;
+    padding: 0;}
+
+
+.button {
+    border: none;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    display: table-column;
+    margin: 2%;
+    border-radius: 50%;
+    height: 140px;
+    width: 140px;
+    font-family: 'open sans', sans-serif;
+    font-size: 16px;}
+
+
+
+.button1 {background-color: #f99898;}
+.button2 {background-color: #ffdf7d;}
+.button3 {background-color: #4bb8d4;}
+
+
+/*ABOUT ME END*/
+
+/* ------------------------------------------------PROJECTS*/
+.project{
+    grid-area: project;
+    grid-area: project;
+}
+
+.projectimg{
+    width: 90%;
+    padding: 3% 5% 3% 5%;
+}
+
+.projectimg2{
+    width: 70%;
+    padding: 5% 15% 0 15%;
+}
+.projectstyle{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    
+}
+
+.projectstyle2{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;  
+}
+/* PROJECT END */
+
+/*---------------------------------------------------------------------------------------------RESPONSIVE - MDEIA QUERIES-------------------*/
+
+
+
+/* ----------------------------------------------------------------MOBILE*/
+@media screen and (max-width: 800px){ 
+#content{  
+     grid-template-areas:
+         "logo logo logo logo logo logo logo logo logo logo logo logo"
+         "resume resume resume resume resume resume resume resume resume resume resume resume" 
+         ". . . profile profile profile profile profile profile . . ."
+         ". . . profile profile profile profile profile profile . . ."
+         ". introduction introduction introduction introduction introduction introduction introduction introduction introduction introduction ."
+         "column1 column1 column1 column1 column1 column1 column1 column1 column1 column1 column1 column1"
+         "column2 column2 column2 column2 column2 column2 column2 column2 column2 column2 column2 column2"
+         "column3 column3 column3 column3 column3 column3 column3 column3 column3 column3 column3 column3"         
+         ". . . . . . . . . . . ."
+         "contacts contacts contacts contacts contacts contacts contacts contacts contacts contacts contacts contacts"
+         ". . homepageimg homepageimg homepageimg homepageimg homepageimg homepageimg homepageimg homepageimg . ."
+         "homepage homepage homepage homepage homepage homepage homepage homepage homepage homepage homepage ."
+         "project project project project project project project project project project project project";}
+
+/* -----------------------------------------------NAV BAR RESPONSIVE*/    
+nav a{
+    display:block;
+    padding: 20px;
+    color: darkgrey;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s;}
+    
+    
+nav{
+    padding-top:30px;
+    padding-bottom: 30px;
+    width:0;
+    transition: 0.5s;
+    overflow-x: hidden; /* makes the contents of the nav bar hidden when closed in mobile view*/
+    position: fixed;
+    height: 100%;
+    top:0;
+    left:0;}  
+    
+.openbtn{
+    display: block;
+    position: fixed;
+    top: 2%;
+    left: 2%;}
+
+    
+.closebtn{
+    display: inline;
+    position: absolute;
+    top: 0px;
+    left: 90px;
+    font-size: 36px;
+    padding: 5px;}  
+    
+
+/*-------------------------------------------HOME PAGE RESPONSIVE*/    
+.circleimg {
+    width:40%;
+    border-radius: 50%;
+    padding: 10px;}   
+
+.homepageimg{
+    grid-area: homepageimg;
+    display:table;
+    margin:auto;
+    padding-top: 0px;
+    padding-bottom: 00px;}    
+
+.homepage{
+    font-size:30px;}
+
+    
+/* ------------------------------------------RESUME*/    
+.resume1{
+        font-size: 20px;
+    }    
+}
+
+
+
+
+/*------------------------------------------------------------------------------------------TABLET*/
+
+@media screen and (max-width: 1200px)and (min-width:801px){ 
+#content{  
+     grid-template-areas:  
+        ". . logo logo logo logo logo logo logo logo . ."
+        ". nav nav nav nav nav nav nav nav nav nav ."
+        ". resume resume resume resume resume resume resume resume resume resume ."
+        ". profile profile profile introduction introduction introduction introduction introduction introduction introduction ."
+        ". profile profile profile introduction introduction introduction introduction introduction introduction introduction ."
+        "contacts contacts contacts contacts contacts contacts contacts contacts contacts contacts contacts contacts"
+        "column1 column1 column1 column1 column2 column2 column2 column2 column3 column3 column3 column3"
+        ". . homepageimg homepageimg homepageimg homepageimg homepageimg homepageimg homepageimg homepageimg . ."
+        ". . homepage homepage homepage homepage homepage homepage homepage . . ."
+        ". .project project project project project project project project . .";  }
+
+}
+
+
+/*-----------------------------------------------------------------------------------------------------------------RESPONSIVE-END------------------------*/
